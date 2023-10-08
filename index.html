@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+  <nav class="navbar bg-primary">
+    <div class="container">
+      <a class="navbar-brand text-light" href="#">Notes App</a>
+    </div>
+  </nav>
+
+  <div class="todo-container container pt-5 pb-5">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" placeholder="Enter the title">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+      <textarea class="form-control" id="desc" rows="5" placeholder="Enter the description"></textarea>
+    </div>
+    <div class="btn-container">
+      <button type="button" id="add-note-btn" class="btn btn-primary">Add note</button>
+      <button type="button" class="btn btn-outline-primary clear-btn" id="clear-btn">Clear</button>
+    </div>
+  </div>
+
+
+  <div class="container mt-5">
+    <h3 class="mb-4">Your Notes</h3>
+    <p class="text-secondary text-sm note-msg">No notes found | Add the notes to show here.</p>
+    <div class="todo-list mb-5">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
